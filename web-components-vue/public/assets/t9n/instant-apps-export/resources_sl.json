@@ -1,0 +1,12 @@
+{
+  "export": "Izvozi",
+  "exportBtn": "Natisni ali izvozi kot PDF",
+  "exportPopover": "Izvozi pojavno okno",
+  "includeExtraContent": "Vključi rezultate",
+  "includeHeaderTheme": "Vključi temo glave",
+  "includeLegend": "Vključi legendo",
+  "includeMap": "Vključi karto",
+  "includePopup": "Vključi pojavno okno",
+  "title": "Naslov",
+  "toggleExport": "Preklopi izvoz"
+}

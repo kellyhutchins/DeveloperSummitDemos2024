@@ -1,0 +1,12 @@
+{
+  "export": "Exportálás",
+  "exportBtn": "Nyomtatás vagy mentés PDF-ként",
+  "exportPopover": "Előugró ablak exportálása",
+  "includeExtraContent": "Eredmények belefoglalása",
+  "includeHeaderTheme": "Fejléctéma belefoglalása",
+  "includeLegend": "Jelmagyarázattal együtt",
+  "includeMap": "Térkép belefoglalása",
+  "includePopup": "Felugró ablak belefoglalása",
+  "title": "Cím",
+  "toggleExport": "Exportálás választókapcsoló"
+}

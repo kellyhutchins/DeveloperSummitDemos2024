@@ -1,0 +1,12 @@
+{
+  "export": "Eksporter",
+  "exportBtn": "Skriv ut eller eksporter som PDF",
+  "exportPopover": "Eksporter popover",
+  "includeExtraContent": "Inkluder resultater",
+  "includeHeaderTheme": "Inkluder toppteksttema",
+  "includeLegend": "Inkluder tegnforklaring",
+  "includeMap": "Inkluder kart",
+  "includePopup": "Inkluder popup",
+  "title": "Tittel",
+  "toggleExport": "Aktiver/deaktiver eksport"
+}

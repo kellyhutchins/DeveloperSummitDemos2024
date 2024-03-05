@@ -1,0 +1,12 @@
+{
+  "export": "Eksportuoti",
+  "exportBtn": "Spausdinti arba eksportuoti kaip PDF",
+  "exportPopover": "Eksportuoti užvedus iškylantį langą",
+  "includeExtraContent": "Įtraukti rezultatus",
+  "includeHeaderTheme": "Įtraukti antraštės temą",
+  "includeLegend": "Įtraukti legendą",
+  "includeMap": "Įtraukti žemėlapį",
+  "includePopup": "Įtraukti iškylantįjį langą",
+  "title": "Pavadinimas",
+  "toggleExport": "Perjungti eksportavimą"
+}

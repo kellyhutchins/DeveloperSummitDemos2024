@@ -1,0 +1,23 @@
+{
+  "name": "map-components-vue-template",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "npm run copyInstantAppsComponentsAssets && vite",
+    "build": "vite build",
+    "copyInstantAppsComponentsAssets": "ncp ./node_modules/@esri/instant-apps-components/dist/assets/ public/assets",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "ncp": "^2.0.0",
+    "@arcgis/core": "~4.29.0",
+    "@arcgis/map-components": "~4.29.0",
+    "@esri/calcite-components": "2.4.0",
+    "@esri/instant-apps-components": "^1.0.0-beta.202",
+    "vue": "^3.4.18"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.3",
+    "vite": "^5.1.3"
+  }
+}
