@@ -56,9 +56,10 @@ function openInfoModal(){
    <calcite-panel>
     <Map   @mapReady="mapIsReady"/>
    </calcite-panel>
+     <!-- Add splash modal from instant apps components repo -->
+  <instant-apps-splash slot="modals" ref="infoModal" :title-text="title" :content="description" primary-button-text="Enter" close-button-disabled="true"  localStorageKey="vueDemo"/>
   </calcite-shell>
-  <!-- Add splash modal from instant apps components repo -->
-  <instant-apps-splash ref="infoModal" :title-text="title" :content="description" primary-button-text="Enter" close-button-disabled="true"  localStorageKey="vueDemo"/>
+
 </template>
 <style>
   calcite-panel[closed]{
