@@ -29,26 +29,29 @@ function handleActionBarClick(e){
 function openInfoModal(){
  infoModal.value.open = true;
 }
+function resetActiveTool(){
+  activeTool.value = null;
+}
 </script>
 
 <template>
-  <calcite-shell >
+  <calcite-shell content-behind >
     <calcite-navigation slot="header">
       <calcite-navigation-logo icon="code" slot="logo" heading="Component Demo" description="Esri Developer Summit 2024">
       </calcite-navigation-logo>
       <calcite-action icon="information" slot="content-end" @click="openInfoModal"></calcite-action>
     </calcite-navigation>
-   <calcite-shell-panel slot="panel-start" display-mode="dock">
+   <calcite-shell-panel slot="panel-start" display-mode="float">
     <calcite-action-bar ref="actionBarRef" slot="action-bar" @click="handleActionBarClick" >
      <calcite-action data-action-id="bookmarks" text-enabled text="Bookmarks" icon="bookmark" v-if="hasBookmarks"  v-bind:active="(activeTool === 'bookmarks')? true :null"></calcite-action>
       <calcite-action  data-action-id="legend" text-enabled text="Legend" icon="legend" v-bind:active="activeTool === 'legend'? true :null"></calcite-action>
     </calcite-action-bar>
     <!-- Bookmarks Panel -->
-    <calcite-panel heading="Bookmarks" v-if="hasBookmarks"  v-bind:closed="activeTool === 'bookmarks' ? null :true" >
+    <calcite-panel heading="Bookmarks"  v-if="hasBookmarks"  v-bind:closed="activeTool === 'bookmarks' ? null :true"  closable @calcitePanelClose="resetActiveTool">
       <arcgis-bookmarks  reference-element="arcgis-map" ></arcgis-bookmarks>
     </calcite-panel>
     <!-- Legend Panel -->
-    <calcite-panel heading="Legend"  v-bind:closed="activeTool === 'legend'  ? null :true" >
+    <calcite-panel heading="Legend" v-bind:closed="activeTool === 'legend'  ? null :true" closable  @calcitePanelClose="resetActiveTool" >
         <arcgis-legend reference-element="arcgis-map"></arcgis-legend>
     </calcite-panel>
    </calcite-shell-panel>
