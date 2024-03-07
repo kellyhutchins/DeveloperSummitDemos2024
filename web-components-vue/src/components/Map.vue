@@ -1,6 +1,6 @@
 <template>
   <arcgis-map    
-    item-id="41ea735861224051818fa810ed2176cf"
+    item-id="866f3ab5307240d49f62ba95c2f452ca"
     v-on:arcgisViewReadyChange="onReady"
   >
   <arcgis-expand mode="floating" position="top-right">
@@ -10,13 +10,14 @@
   </arcgis-map>
 </template>
 
-<script setup>
+<script setup >
 
 const emit = defineEmits(["mapReady"]);
 
 function onReady(event) {
   const { map } = event.target;
   emit('mapReady',map);
+  
 }
 </script>
 <style>
